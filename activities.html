@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Activities | Nurfatihah Najwa</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+    <section class="sub-header">
+         <nav>
+             <div class="logo">
+                <img src="images/logo baru.png" alt="NJW Logo">
+            </div>
+
+            <div class="nav-links" id="navLinks">
+                <!--Menu icon (hamburger)-->
+                <button class="btn"onclick="hideMenu()">
+                    <i class="fa fa-times"></i>
+                </button>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="dropdown">
+                      <a href="cv.html" class="dropbtn">MY CV <i class="fa fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                          <a href="#personal-info">Personal Info</a>
+                          <a href="#education">Education</a>
+                          <a href="#skills">Skills</a>
+                          <a href="#language">Languages</a>
+                        </div>
+                    <li><a href="myportfolio.html">MY PORTFOLIO</a></li>
+                    <li><a href="activities.html">ACTIVITIES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <!--Close icon(x)-->
+            <button class="btn"onclick="showMenu()">
+                <i class="fa fa-bars"></i>
+            </button>
+        </nav>
+    <h1>My Activities</h1>
+    <p class="subtitle">A showcase of my contributions and learning</p>
+    </section>
+  
+    <!-----------------My Activities content------------->
+<section class="activities-section">
+  <div class="activities-grid">
+    <div class="activity-card">
+      <div class="activity-gallery">
+        <img src="images/penjara4.jpg" alt="Community Library Outreach 1" />
+        <img src="images/penjara2.jpg" alt="Community Library Outreach 2" />
+        <img src="images/PENJARA SORANG.jpg" alt="Community Library Outreach 3" />
+        <img src="images/PENJARA1.jpg" alt="Community Library Outreach 4" />
+      </div>
+      <h2>Community Library Outreach</h2>
+      <p>Collaborated with Muzium Penjara Malaysia, Melaka (June 2024) to coordinate reading sessions and distribute educational resources for underprivileged children.</p>
+    </div>
+    <div class="activity-card">
+      <div class="activity-gallery">
+        <img src="images/click 1.jpg" alt="Act Right, Click Wise 1" />
+        <img src="images/click 2.jpg" alt="Act Right, Click Wise 2" />
+      </div>
+      <h2>Act Right, Click Wise</h2>
+      <p>As Secretary (July 2024), planned a digital safety campaign for students and maintained communication with partner schools while managing meeting records.</p>
+    </div>
+    <div class="activity-card">
+      <div class="activity-gallery">
+        <img src="images/kwn buku kita5.jpg" alt="Kawan Buku Kita 1" />
+        <img src="images/kwn buku kita2.jpg" alt="Kawan Buku Kita 2" />
+        <img src="images/kwn buku kita sorang.jpg" alt="Kawan Buku Kita 3" />
+        <img src="images/KWN KITA BARU.jpg" alt="Kawan Buku Kita 4" />
+      </div>
+      <h2>“Kawan Buku Kita: Teman Bacaan Anak Kampung”</h2>
+      <p>Participated as the Activity Bureau (Jan 2025), supporting literacy initiatives and providing educational resources to indigenous children.</p>
+    </div>
+    <div class="activity-card">
+       <div class="activity-gallery">
+        <img src="images/bridged1.jpg" alt="Squad Bantu Briged: Ziarah Cakna 1" />
+        <img src="images/bridged.jpg" alt="Squad Bantu Briged: Ziarah Cakna 2" />
+      </div>
+      <h2>“Squad Bantu Briged: Ziarah Cakna”</h2>
+      <p>Participated as a volunteer (Jun 2023) in an outreach initiative to assist non-resident individuals with disabilities (OKU). This activity involved visiting and providing support to these individuals, fostering a spirit of empathy, inclusivity, and community care.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!------ Footer ------>
+
+<section class="footer">
+    <h4>Thank You &hearts;</h4>
+    <div class="icons">
+        <a href="https://www.facebook.com/profile.php?id=61552513170157" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/tihahnajwa/" class="fa fa-instagram"></a>
+        <a href="https://www.youtube.com/@Tihahnajwa" class="fa fa-youtube"></a>
+    </div>
+    <p1>This website is part of my assignment for the IMS456 course, crafted with care and creativity as part of my academic journey.</p1>
+    <p2>Made with &hearts; by NURFATIHAH NAJWA 2025. &copy; All Rights Reserved.</p2>
+</section>
+
+<!------JavaScript for Toggle Menu------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>

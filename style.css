@@ -1,0 +1,562 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/pinterest.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+  width: 100px; /* Or your preferred size */
+  height: 100px; /* Same as width for a perfect circle */
+  object-fit: cover; /* Ensures the image doesn’t get squished */
+  border-radius: 50%; /* This makes it circular! */
+  display: block;
+}
+
+
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+} 
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #6034d7ac;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #6034d7ac;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #6034d7ac;
+    background: #6034d7ac;
+    transition: 1s;
+}
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+    font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #6034d7ac;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    nav .fa{
+        display: block;
+        color: #6034d7ac;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+/*------about me---------*/
+.about-me{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.about-me-col{
+    flex-basis: 31;
+    background: #a78cf07a;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.about-me-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/*---------------project----------*/
+.myprojects{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.myprojeects-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.myprojects-col img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: #6034d7ac;
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 20px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/*-----------activities-----------*/
+.activities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.activities-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.activities-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+.activities-col p{
+    padding: 0;
+}
+.activities-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/*------footer------*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 12px;
+    line-height: 1.4;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.footer p1, .footer p2{
+    display: block;
+    margin: 5px 0;
+}
+.icons .fa{
+    color:#6034d7ac;
+    margin: 0 10px;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+/*-----------------CV pages---------------*/
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/fatihah’s.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff ;
+    
+}
+.sub-header h1{
+    margin-top: 100px;
+}
+
+
+/* CV Page Styles */
+.cv-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  background: #e3d4f3;
+  padding: 40px 20px;
+  border-radius: 12px;
+}
+.cv-left {
+  flex: 1 1 200px;
+  text-align: center;
+}
+.cv-left img {
+  width: 150px;
+  height: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 3px solid #6a0dad;
+}
+.cv-left h2 {
+  margin-top: 10px;
+  color: #23154bac;
+
+}
+.cv-left p {
+  color: #333;
+}
+
+.cv-right {
+  flex: 2 1 400px;
+}
+.cv-right h2 {
+  color: #23154bac;
+  margin-top: 20px;
+}
+.cv-right .cv-item h3 {
+  margin-bottom: 5px;
+}
+.cv-right ul {
+  list-style: disc inside;
+  padding-left: 10px;
+}
+
+.personal-info-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.personal-info-list li {
+  margin-bottom: 5px;
+}
+.personal-info-list li strong {
+  color: #333;
+}
+
+.hero-btn.purple-btn {
+  background: #6a0dad;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+}
+.hero-btn.purple-btn:hover {
+  background: #9b59b6;
+}
+
+/* Dropdown aesthetic purple style */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: hsl(267, 68%, 66%);
+    min-width: 160px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(106, 13, 173, 0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: #6a0dad;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+.dropdown-content a:hover {
+    background: #cea3ed;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Portfolio section */
+.portfolio-section {
+  padding: 60px 20px;
+  background: #f9f7fb;
+}
+
+.portfolio-section h2 {
+  text-align: center;
+  font-size: 28px;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(106, 13, 173, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 18px rgba(106, 13, 173, 0.15);
+}
+
+.project-card img {
+  width: 100%;
+  height: 300px; /* Make them bigger! */
+  object-fit: cover;
+  border-bottom: 3px solid #6a0dad;
+}
+
+.project-card iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
+}
+
+.project-card h2 {
+  color: #23154bac;
+  margin: 15px 0 10px;
+  font-size: 20px;
+}
+
+.project-card p {
+  font-size: 14px;
+  padding: 0 15px 15px;
+  color: #555;
+}
+
+/* Optional: spacing between the two sections */
+.portfolio-section + .portfolio-section {
+  margin-top: 40px;
+  background: #fff; /* Subtle difference for clarity */
+  border-top: 2px solid #6a0dad1a; /* Light border for separation */
+}
+
+
+/* Activities section */
+.activities-section {
+  padding: 50px 20px;
+  background: #f9f7fb;
+}
+
+.activities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.activity-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(106, 13, 173, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.activity-card:hover {
+  transform: translateY(-5px);
+}
+
+.activity-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 3px solid #6a0dad;
+}
+
+.activity-card h2 {
+  color: #23154bac;
+  margin: 15px 0 10px;
+  font-size: 18px;
+}
+
+.activity-card p {
+  font-size: 14px;
+  padding: 0 15px 15px;
+  color: #333;
+}
+
+
+
+
+/* Contact container */
+.subtitle {
+  font-weight: 700; 
+}
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #e3d6f3 0%, #f9f7fb 100%);
+}
+.contact-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(106, 13, 173, 0.1);
+  padding: 30px;
+  flex: 1 1 300px;
+  max-width: 400px;
+  transition: transform 0.3s ease;
+}
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+.contact-card h2 {
+  color: #23154bac;
+  margin-top: 0;
+}
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+.contact-info li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.contact-info a {
+  color: #6a0dad;
+  text-decoration: none;
+}
+.contact-info a:hover {
+  text-decoration: underline;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.social-links a {
+  color: #6a0dad;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+.social-links a:hover {
+  color: #9b59b6;
+}

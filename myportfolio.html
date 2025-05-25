@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio | Nurfatihah Najwa</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+    <section class="sub-header">
+         <nav>
+            <div class="logo">
+                <img src="images/logo baru.png" alt="NJW Logo">
+            </div>
+
+            <div class="nav-links" id="navLinks">
+                <!--Menu icon (hamburger)-->
+                <button class="btn"onclick="hideMenu()">
+                    <i class="fa fa-times"></i>
+                </button>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="dropdown">
+                      <a href="cv.html" class="dropbtn">MY CV <i class="fa fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                          <a href="#personal-info">Personal Info</a>
+                          <a href="#education">Education</a>
+                          <a href="#skills">Skills</a>
+                          <a href="#language">Languages</a>
+                        </div>
+                    <li><a href="myportfolio.html">MY PORTFOLIO</a></li>
+                    <li><a href="activities.html">ACTIVITIES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <!--Close icon(x)-->
+            <button class="btn"onclick="showMenu()">
+                <i class="fa fa-bars"></i>
+            </button>
+        </nav>
+    <h1>My Portfolio</h1>
+    <p class="subtitle">A glimpse of my creative and academic journey</p>
+    </section>
+
+ <!------------portfolio------------->
+<section class="portfolio-section">
+    <h2>My Projects</h2>
+  <div class="portfolio-grid">
+    <div class="project-card">
+      <img src="images/coming soon.png" alt="Digital Library Prototype" />
+      <h2>Digital Library Prototype</h2>
+      <p>A functional digital library prototype using KOHA, with a user-friendly interface and integrated metadata standards (MARC21).</p>
+    </div>
+    <div class="project-card">
+      <img src="images/cerpen.jpg" alt="Book Publication Project" />
+      <h2>Book Publication Project</h2>
+      <p>A learning project designed to explore the full process of publishing a book – from writing the manuscript, editing, and layout design to final publication.</p>
+    </div>
+  </div>
+</section>
+
+<section class="portfolio-section">
+  <h2>Assignment Videos</h2>
+  <div class="portfolio-grid">
+    <!-- Assignment Video 1 -->
+    <div class="project-card">
+      <iframe width="300" height="170" src="https://www.youtube.com/embed/nDMztJgzcNw" 
+        title="Assignment Video 1" frameborder="0" allowfullscreen></iframe>
+      <h2>Assignment Video 1</h2>
+      <p>First assignment video showcasing my project and insights.</p>
+    </div>
+
+    <!-- Assignment Video 2 -->
+    <div class="project-card">
+      <iframe width="300" height="170" src="https://www.youtube.com/embed/JgrUwCFZb-Y" 
+        title="Assignment Video 2" frameborder="0" allowfullscreen></iframe>
+      <h2>Assignment Video 2</h2>
+      <p>Second assignment video with additional details and presentation.</p>
+    </div>
+
+    <!-- Assignment Video 3 -->
+    <div class="project-card">
+      <iframe width="300" height="170" src="https://www.youtube.com/embed/mekrK-rFo-4" 
+        title="Assignment Video 3" frameborder="0" allowfullscreen></iframe>
+      <h2>Assignment Video 3</h2>
+      <p>Third assignment video, part of my academic journey.</p>
+    </div>
+
+    <!-- Assignment Video 4 -->
+    <div class="project-card">
+      <iframe width="300" height="170" src="https://www.youtube.com/embed/wSXI8_Ufu00" 
+        title="Assignment Video 4" frameborder="0" allowfullscreen></iframe>
+      <h2>Assignment Video 4</h2>
+      <p>Final assignment video rounding up the project highlights.</p>
+    </div>
+  </div>
+</section>
+
+
+
+<!------ Footer ------>
+
+<section class="footer">
+    <h4>Thank You &hearts;</h4>
+    <div class="icons">
+        <a href="https://www.facebook.com/profile.php?id=61552513170157" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/tihahnajwa/" class="fa fa-instagram"></a>
+        <a href="https://www.youtube.com/@Tihahnajwa" class="fa fa-youtube"></a>
+    </div>
+    <p1>This website is part of my assignment for the IMS456 course, crafted with care and creativity as part of my academic journey.</p1>
+    <p2>Made with &hearts; by NURFATIHAH NAJWA 2025. &copy; All Rights Reserved.</p2>
+</section>
+
+<!------JavaScript for Toggle Menu------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>

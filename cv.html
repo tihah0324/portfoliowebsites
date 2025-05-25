@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Curriculum Vitae | Nurfatihah Najwa</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+    <section class="sub-header">
+         <nav>
+            <div class="logo">
+                <img src="images/logo baru.png" alt="NJW Logo">
+            </div>
+
+            <div class="nav-links" id="navLinks">
+              <!--Hamburger icon-->
+                <button class="btn" onclick="hideMenu()">
+                  <i class="fa fa-times"></i>
+                </button>
+              
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="dropdown">
+                      <a href="cv.html" class="dropbtn">MY CV <i class="fa fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                          <a href="#personal-info">Personal Info</a>
+                          <a href="#education">Education</a>
+                          <a href="#skills">Skills</a>
+                          <a href="#language">Languages</a>
+                        </div>
+                    </li>
+                    <li><a href="myportfolio.html">MY PORTFOLIO</a></li>
+                    <li><a href="activities.html">ACTIVITIES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <!--Close icon(x)-->
+            <button class="btn" onclick="showMenu()">
+                <i class="fa fa-bars"></i>
+            </button>  
+        </nav>
+        <h1>My Curriculum Vitae</h1>
+        <p class="subtitle">An in-depth view of my achievements and growth</p>
+    </section>
+ 
+    <!-----------------Curriculum Vitae content------------->
+<section class="CurriculumVitae">
+  <div class="cv-container">
+    <div class="cv-left">
+      <img src="images/GAMBAR PROFILE.jpg" alt="Profile Picture">
+      <h2>NURFATIHAH NAJWA BINTI MOHD ABBAS</h2>
+      <p>Aspiring Librarian</p>
+    </div>
+  <div class="cv-right">
+      <h2 id="personal-info">👩‍💼 Personal Information</h2>
+        <ul class="personal-info-list">
+          <li><strong>Full Name:</strong> Nurfatihah Najwa binti Mohd Abbas</li>
+          <li><strong>Address:</strong> 04-02, Blok N Pangsapuri Jasa Taman Mutiara Rini, 81300 Skudai, Johor</li>
+          <li><strong>Phone Number:</strong> 011-57018629</li>
+          <li><strong>Email:</strong> fatihahnajwa0324@gmail.com</li>
+        </ul>
+
+      <h2 id="education">🎓 Education</h2>
+      <div class="cv-item">
+        <h3>Universiti Teknologi MARA (UiTM), Rembau</h3>
+        <p>Bachelor of Information Science (Hons) Library Management<br>
+          October 2022 – March 2026 | CGPA: 3.51 (Dean’s List Sem 2, 4, 5)<br>
+          <em>Relevant Coursework:</em> Cataloguing and Classification, Digital Libraries, Record Management, Public Relationship</p>
+      </div>
+      <div class="cv-item">
+        <h3>Kolej Matrikulasi Johor, Tangkak</h3>
+        <p>Matriculation Programme: Science (July 2021 – June 2022)</p>
+      </div>
+      <div class="cv-item">
+        <h3>Sekolah Menengah Kebangsaan Taman Mutiara Rini 2, Johor</h3>
+        <p>SPM (January 2016 – December 2020): 4A, 1B, 4C</p>
+      </div>
+
+      <h2 id="skills">🛠 Skills</h2>
+      <ul>
+        <li>KOHA Library System (Intermediate)</li>
+        <li>HTML/CSS (Basic)</li>
+        <li>Cataloguing (AACR2, MARC21)</li>
+        <li>Content Management Systems (Wix)</li>
+        <li>OPAC (Basic)</li>
+      </ul>
+
+      <h2 id="languages">🌍 Languages</h2>
+      <ul>
+        <li>Malay (Native)</li>
+        <li>English (Intermediate)</li>
+        <li>Mandarin (Elementary)</li>
+      </ul>
+
+      <a href="cv-full.pdf" class="hero-btn purple-btn">Download Full CV</a>
+    </div>
+  </div>
+</section>
+
+
+<!------ Footer ------>
+
+<section class="footer">
+    <h4>Thank You &hearts;</h4>
+    <div class="icons">
+        <a href="https://www.facebook.com/profile.php?id=61552513170157" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/tihahnajwa/" class="fa fa-instagram"></a>
+        <a href="https://www.youtube.com/@Tihahnajwa" class="fa fa-youtube"></a>
+    </div>
+    <p1>This website is part of my assignment for the IMS456 course, crafted with care and creativity as part of my academic journey.</p1>
+    <p2>Made with &hearts; by NURFATIHAH NAJWA 2025. &copy; All Rights Reserved 2025.</p2>
+</section>
+
+<!------JavaScript for Toggle Menu------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>
